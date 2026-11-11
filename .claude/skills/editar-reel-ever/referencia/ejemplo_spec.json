@@ -1,0 +1,35 @@
+{
+ "name": "04_final_el_juego_del_123",
+ "title": "El juego del|*1, 2, 3*",
+ "words": "all_words.jsonl",
+ "out": "out",
+ "music": "fun",
+ "sfx_dir": "sfx2",
+ "trans_sfx": "transitionswoosh",
+ "segments": [[7319.8, 7325.4], [7332.0, 7340.6], [7341.3, 7358.6], [7528.6, 7539.6], [7541.3, 7624.6]],
+ "transitions": ["slideleft", "zoomin", "fadewhite", "smoothright"],
+ "no_trim_groups": [3, 4],
+ "fixed": [[7353.4, 7358.7, 255, 0, 640]],
+ "opts": {"exclude_x": [0, 340], "wide_cx": 640},
+ "subs": [[7320.0, 7322.2], [7335.7, 7337.1], [7343.5, 7344.5], [7545.2, 7547.5], [7616.4, 7619.3]],
+ "emph": ["corre", "asco", "fácil"],
+ "fix": {"ovecita": "hamburguesita", "palabra_que_sobra": ""},
+ "events": [
+  {"at": 7320.1, "fx": "zoom", "dur": 0.6, "text": "intento 1", "tdur": 1.3, "rot": -4},
+  {"at": 7343.6, "fx": "shake", "dur": 1.0, "flash": true, "sfx": "bonk", "vol": 0.45},
+  {"at": 7355.2, "fx": "bigzoom", "dur": 1.6, "sfx": "ding", "vol": 0.4},
+  {"at": 7545.3, "fx": "shake", "dur": 1.5, "sfx": "riser_metallic", "vol": 0.32, "text": "¡corre!", "tdur": 1.2}
+ ],
+ "_notas": {
+  "segments": "tiempos del stream en segundos. Cada segmento sin 'hard' es una parte nueva con transición; [a, b, {\"hard\": true}] se pega a la anterior sin transición",
+  "title": "texto fijo arriba; '|' = salto de línea, *palabra* = amarilla. Quitar la clave si no se quiere título",
+  "subs": "rangos donde SÍ salen subtítulos (palabra por palabra). Fuera de ellos no sale texto",
+  "fix": "corrige palabras mal transcritas; valor vacío = no mostrar esa palabra",
+  "no_trim_groups": "partes donde NO se recortan silencios (p. ej. cuando corren y no hablan)",
+  "fixed": "[inicio, fin, x, y, alto] encuadre fijo del panel de arriba en coordenadas del video 1280x720",
+  "opts.exclude_x": "nunca hacer zoom a caras dentro de ese rango horizontal",
+  "no_sfx": "true = sin ningún efecto de sonido (ni transiciones)",
+  "gamma / bright": "subir para escenas oscuras (carro de noche: gamma 1.32, bright 0.03)",
+  "music": "fun (compras, comida, juegos) o chill (carro, historias)"
+ }
+}
